@@ -1,25 +1,19 @@
-import logo from './logo.svg';
-import './App.css';
+import {useRef} from "react";
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+
+    const inputRef = useRef();
+
+    function runRef() {
+        inputRef.current.focus()
+    }
+
+    return (
+        <div className={'container bg-dark p-5'}>
+            <input type="text" className={'form-control my-5'} ref={inputRef}/>
+            <button className={'btn btn-success'} onClick={runRef}>Submit</button>
+        </div>
+    );
 }
 
 export default App;

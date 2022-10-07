@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/focus-input.iml" filepath="$PROJECT_DIR$/.idea/focus-input.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../useref-lesson/.idea/useref-lesson.iml" filepath="$PROJECT_DIR$/../useref-lesson/.idea/useref-lesson.iml" />
     </modules>
   </component>
 </project>
